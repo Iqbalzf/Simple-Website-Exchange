@@ -6,7 +6,7 @@ const navMenu = document.getElementById('nav-menu'),
 /* Menu show */
 if (navToggle) {
     navToggle.addEventListener('click', () => {
-        navMenu.classList.add('show-menu')
+        navMenu.classList.add('show-menu') // Toggle antara tampil dan tersembunyi
     })
 }
 
@@ -38,7 +38,7 @@ const blurHeader = () => {
 window.addEventListener('scroll', blurHeader)
 
 /*=============== SWIPER PLANETS ===============*/
-const swiperTravel = new Swiper('.travel__swiper', {
+const swiperToken = new Swiper('.token__swiper', {
     loop: true,
     spaceBetween: '32',
     grabCursor: true,
@@ -100,7 +100,7 @@ const sr = ScrollReveal({
     //reset:true, // Animations repeat
 })
 
-sr.reveal(`.home__data, .travel__swiper, .contact__container`)
+sr.reveal(`.home__data, .token__swiper, .contact__container`)
 sr.reveal(`.home__img`, { origin: 'bottom' })
 sr.reveal(`.home__ovni`, { delay: 800 })
 sr.reveal(`.explore__img`, { origin: 'left' })

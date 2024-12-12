@@ -84,6 +84,7 @@ button {
 body {
   background-color: var(--body-color);
   color: var(--text-color);
+
 }
 
 input,
@@ -344,12 +345,12 @@ img {
   box-shadow: 0 8px 32px hsla(25, 96%, 55%, 0.4);
 }
 
-/*=============== TRAVEL ===============*/
-.travel {
+/*=============== TOKEN ===============*/
+.token {
   position: relative;
 }
 
-.travel__lines {
+.token__lines {
   max-width: initial;
   width: 550px;
   position: absolute;
@@ -357,7 +358,7 @@ img {
   left: 0;
 }
 
-.travel__container {
+.token__container {
   position: relative;
   background-color: hsla(238, 50%, 20%, 0.4);
   backdrop-filter: blur(16px);
@@ -365,11 +366,11 @@ img {
   padding: 2rem 2rem 5rem;
 }
 
-.travel__swiper {
+.token__swiper {
   padding-top: 3rem;
 }
 
-.travel__card {
+.token__card {
   position: relative;
   border: 2px solid;
   border-image: var(--second-gradient) 1;
@@ -378,7 +379,7 @@ img {
   text-align: center;
 }
 
-.travel__img {
+.token__img {
   width: 180px;
   position: absolute;
   top: -3rem;
@@ -389,18 +390,18 @@ img {
   transition: transform 0.6s;
 }
 
-.travel__title {
+.token__title {
   font-size: var(--h2-font-size);
 }
 
-.travel__info {
+.token__info {
   display: block;
   color: var(--first-color);
   font-weight: var(--font-semi-bold);
   margin-bottom: 1rem;
 }
 
-.travel__description {
+.token__description {
   font-size: var(--small-font-size);
 }
 
@@ -437,7 +438,7 @@ img {
 }
 
 /* Swiper animation */
-.swiper-slide-active .travel__img {
+.swiper-slide-active .token__img {
   transform: rotate(0);
 }
 
@@ -486,7 +487,9 @@ img {
 }
 
 .explore__img {
-  width: 320px;
+  width: 100%;
+  max-width: 320px;
+  height: auto;
   justify-self: center;
 }
 
@@ -678,7 +681,7 @@ img {
     font-size: 2.5rem;
   }
 
-  .travel__container {
+  .token__container {
     padding-inline: 1rem;
   }
 
@@ -697,7 +700,7 @@ img {
     justify-content: center;
   }
 
-  .travel__card {
+  .token__card {
     width: 265px;
   }
 }
@@ -806,35 +809,35 @@ img {
     width: 550px;
   }
 
-  .travel__lines {
+  .token__lines {
     width: 800px;
   }
 
-  .travel__container {
+  .token__container {
     padding: 3.5rem 3.5rem 7.5rem;
   }
 
-  .travel__container .section__title {
+  .token__container .section__title {
     text-align: initial;
   }
 
-  .travel__swiper {
+  .token__swiper {
     max-width: 980px;
   }
 
-  .travel__card {
+  .token__card {
     padding-top: 11rem;
   }
 
-  .travel__img {
+  .token__img {
     width: 200px;
   }
 
-  .travel__info {
+  .token__info {
     margin-bottom: 1.5rem;
   }
 
-  .travel__description {
+  .token__description {
     font-size: var(--normal-font-size);
   }
 
